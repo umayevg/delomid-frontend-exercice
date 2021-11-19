@@ -1,0 +1,173 @@
+/* General */
+body {
+  overflow-x: hidden;
+}
+section#sunrise {
+  border: 1px solid red;
+  width: 100%;
+  min-height: 100%;
+  background-image: url("/assets/img/sunrise.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+}
+
+.section {
+  min-height: 600px;
+  margin-bottom: 150px;
+}
+
+.home {
+  position: relative;
+  min-height: 90vh;
+  margin-bottom: 300px;
+  background-image: url("/assets/img/sunrise.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.back {
+  text-decoration: none;
+  position: absolute;
+  top: 770px;
+  left: calc(100% / 2 - 30px);
+  border-radius: 50%;
+  padding: 8px;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #65d136;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.back:hover {
+  color: #65d136;
+  background: #fff;
+}
+
+.row svg {
+  max-width: 60px;
+  width: 100%;
+  max-height: 60px;
+  height: 100%;
+  color: lightgreen;
+}
+
+#main-nav {
+  position: relative;
+}
+
+nav a   {
+  color: #fff !important;
+}
+
+.home-titles {
+    position: relative;
+    left: 0;
+    top: 300px;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.home-titles h1 {
+    font-size: 4rem;
+}
+
+.card {
+    transition: all 0.3s;
+}
+
+.work:hover .card {
+    transform: translate(5px,-5px);
+
+}
+
+
+/* --end General-- */
+
+/* Products */
+section#products a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --end Products-- */
+
+/* Portfolio */
+#portfolio svg {
+  max-width: 40px;
+  width: 100%;
+  max-height: 40px;
+  height: 100%;
+  color: lightgreen;
+}
+
+.portfolio-image {
+  overflow: hidden;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: auto;
+}
+
+#portfolio span {
+  background: #ececec;
+}
+
+/* --end Portfolio-- */
+
+/* Contact */
+#contact .input-icon {
+  position: absolute;
+  font-size: 18px;
+  left: 8px;
+  top: 6px;
+}
+
+#contact input {
+  width: 80%;
+  margin: 0;
+  display: inline;
+  border: none;
+  background: #ececec;
+  outline: none;
+  padding: 8px;
+  padding-left: 30px;
+  border-radius: 3px 0 0 3px;
+}
+
+#contact button {
+  position: relative;
+  left: -12px;
+  background: #65d136;
+  border: none;
+  padding: 8px;
+  width: 18%;
+  border-radius: 0 3px 3px 0;
+  color: #fff;
+}
+
+.newsletter-text {
+  font-size: 1.2rem;
+}
+/* --end Contact-- */
+
+/* Media Queries */
+@media (min-width: 992px) {
+  #portfolio .portfolio-image img {
+    position: absolute;
+    max-width: 800px;
+    width: 100% !important;
+    overflow: hidden;
+  }
+
+  a.navbar-brand {
+    margin: 0;
+    position: absolute;
+    left: calc(100% / 2 - 32px);
+  }
+}
+
+/* --end Queries-- */
